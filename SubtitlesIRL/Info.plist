@@ -2,14 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPrivacyAccessedAPICategoryUserDefaults</key>
+	<string></string>
+	<key>NSPrivacyCollectedDataTypeProductInteraction</key>
+	<string>Events throughout the app are saved without identifying information.  Data saved includes an event name, device, and time.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech recognition is used to display and save subtitles on the device.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access is needed to record speech to create subtitles and record and save audio locally.</string>
+	<key>NSPrivacyCollectedDataTypePurposes</key>
+	<array>
+		<string>Device ID is used to maintain a server session, which is only used to check subscriptions and which features of the app are used.</string>
+		<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+	</array>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<string>NSPrivacyCollectedDataTypeDeviceID</string>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationPreferredDefaultSceneSessionRole</key>
-		<string>UIWindowSceneSessionRoleApplication</string>
+		<string>UIWindowSceneSessionRoleVolumetricApplication</string>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 		<key>UISceneConfigurations</key>
-		<dict/>
+		<dict>
+			<key>UIWindowSceneSessionRoleVolumetricApplication</key>
+			<array/>
+		</dict>
 	</dict>
 </dict>
 </plist>
